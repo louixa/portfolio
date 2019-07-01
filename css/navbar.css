@@ -1,0 +1,23 @@
+.navbar-index {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  height: 70%;
+  color: #393D40;
+  background-color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-title {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  height: 70%;
+  color: #393D40;
+  background-color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-index .navbar-menu {
+  flex-grow: 0;
+}
