@@ -1,31 +1,23 @@
-a:link, a:active, a:visited {
-  color: #ECF0F1;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #A39BA8;
-  text-decoration: none;
-  transition: all 700ms ease;
-}
-
 .navbar-index {
   margin: 0 auto;
   padding: 10px;
-  font-size: 10px;
-  color: #ECF0F1;
-  background-color: #000000;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
+  width: 100%;
+  height: 70%;
+  color: #393D40;
+  background-color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navbar-title {
   margin: 0 auto;
-  padding: 0px;
-  font-size: 31px;
-  letter-spacing: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 70%;
+  color: #393D40;
+  background-color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-.navbar-nav {
-  margin: 2px;
+.navbar-index .navbar-menu {
+  flex-grow: 0;
 }
