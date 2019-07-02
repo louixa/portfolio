@@ -4,7 +4,7 @@ a:link, a:active, a:visited {
 }
 
 a:hover {
-  color: #A39BA8;
+  color: #EDD382;
   text-decoration: none;
   transition: all 700ms ease;
 }
@@ -17,6 +17,10 @@ a:hover {
   background-color: #000000;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
+}
+
+.navbar-title:hover {
+  color: #8ACB88;
 }
 
 .navbar-title {
