@@ -1,14 +1,3 @@
-a:link, a:active, a:visited {
-  color: #ECF0F1;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #EDD382;
-  text-decoration: none;
-  transition: all 700ms ease;
-}
-
 .navbar-index {
   margin: 0px;
   padding: 20px;
@@ -19,13 +8,20 @@ a:hover {
   letter-spacing: 2px;
 }
 
-.navbar-title:hover {
-  color: #8ACB88;
-}
-
 .navbar-title {
   margin: 0px auto;
   padding: 0px;
-  font-size: 36px;
-  letter-spacing: 15px;
+  font-size: 37px;
+  letter-spacing: 16px;
+}
+
+.navbar-title:hover {
+  color: #8ACB88;
+  transition: all 700ms ease;
+}
+
+.nav-item a:hover {
+  color: #EDD382;
+  text-decoration: none;
+  transition: all 700ms ease;
 }
