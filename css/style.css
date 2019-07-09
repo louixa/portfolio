@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400&display=swap');
+
 body {
   background-color: #000000;
   font-family: 'Roboto', sans-serif;
@@ -18,6 +20,8 @@ h1 {
 
 h2 {
   font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  word-spacing: 7px;
 }
 
 a:link, a:active, a:visited {
@@ -57,20 +61,5 @@ a:link, a:active, a:visited {
 
 .container-main {
   width: 100%;
-  height: 100%;
-}
-
-.row-about {
-  width: 90%;
-  height: 100%;
-  }
-
-
-.about-img {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 300px 0px;
-  margin: 0px auto;
   height: 100%;
 }
