@@ -2,7 +2,6 @@
 
 body {
   background-color: #000000;
-  font-family: 'Roboto', sans-serif;
   color: #ECF0F1;
   opacity: 1;
   transition: 1s opacity;
@@ -11,6 +10,14 @@ body {
 body.fade-out {
     opacity: 0;
     transition: none;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 h1 {
