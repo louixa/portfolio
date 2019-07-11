@@ -13,6 +13,7 @@ body.fade-out {
 }
 
 p {
+  text-align: left;
   font-family: 'Roboto', sans-serif;
   display: block;
   font-weight: 300;
