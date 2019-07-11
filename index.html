@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" media="screen" href="css/particle.css">
 </head>
 <body>
   <script>document.body.className += ' fade-out';</script>
@@ -19,6 +20,8 @@
   <div data-include="header"></div>
     <center>
       <div class="container-main">
+        <!-- PARTICLES.JS CONTAINER -->
+        <div id="particles-js"></div>
         <!-- TITLE -->
         <div class="row index-title">
             <h1>Louisa Wong is a front-end developer and photographer ready to bring ideas to life.</h1>
@@ -27,20 +30,22 @@
     </center>
   <!-- FOOTER -->
   <div data-include="footer"></div>
-  <!-- SCRIPTS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script>
-    $(function(){
-      var includes = $('[data-include]');
-      jQuery.each(includes, function(){
-        var file = 'views/' + $(this).data('include') + '.html';
-        $(this).load(file);
-        $('body').removeClass('fade-out');
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(function(){
+        var includes = $('[data-include]');
+        jQuery.each(includes, function(){
+          var file = 'views/' + $(this).data('include') + '.html';
+          $(this).load(file);
+          $('body').removeClass('fade-out');
+        });
       });
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </script>
+    <script src="../particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
