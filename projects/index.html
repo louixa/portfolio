@@ -1,1 +1,53 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>L O U I X A ー Projects</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A Web Developer and Photographer based in Tokyo, Japan">
+    <meta name="keywords" content="web developer, HTML, CSS, Javascript, Ruby, Ruby on Rails, RoR, front-end developer, coding, photographer, graphics, developer, JS, photography, code, web design, design">
+    <meta name="author" content="Louisa Wong">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/projects.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+</head>
+<body>
+  <script>document.body.className += ' fade-out';</script>
+  <!-- NAVBAR -->
+  <div data-include="header"></div>
+    <center>
+      <div class="container-main">
+        <div class="card-trip">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+          <div class="card-trip-infos">
+            <div>
+              <h2>Title here</h2>
+              <p>Short description here!</p>
+            </div>
+            <h2 class="card-trip-pricing">£99.99</h2>
+            <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+          </div>
+        </div>
+      </div>
+    </center>
+  <!-- FOOTER -->
+  <div data-include="footer"></div>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(function(){
+      var includes = $('[data-include]');
+      jQuery.each(includes, function(){
+        var file = '../views/' + $(this).data('include') + '.html';
+        $(this).load(file);
+        $('body').removeClass('fade-out');
+      });
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
