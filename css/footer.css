@@ -10,8 +10,9 @@
 }
 
 .footer {
-  margin: 0px;
-  padding: 20px;
+  margin: 0px auto;
+  height: 100px;
+  padding: 50px;
   font-size: 12px;
   color: #ECF0F1;
   background-color: #000000;
