@@ -44,6 +44,7 @@ form {
 .about-p {
   padding: 10px;
   padding-bottom: 50px;
+  text-align: left;
 }
 
 button {
