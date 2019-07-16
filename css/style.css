@@ -40,7 +40,7 @@ a:link, a:active, a:visited {
 }
 
 .index-title {
-  text-align: center;
+  text-align: let;
   justify-content: center;
   margin: 0px auto;
   padding-bottom: 250px;
