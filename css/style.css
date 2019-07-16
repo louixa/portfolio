@@ -43,7 +43,10 @@ a:link, a:active, a:visited {
   text-align: center;
   justify-content: center;
   margin: 0px auto;
-  padding: 250px;
+  padding-bottom: 250px;
+  padding-top: 250px;
+  padding-right: 0;
+  padding-left: 0;
   width: 100%;
   height: 100%;
   top: auto;
