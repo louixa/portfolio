@@ -76,16 +76,16 @@ a:link, a:active, a:visited {
 
 
 @media only screen and (max-width:800px) {
-  .container-main {
+  .container-main, #particles-js {
     width: 80%;
     padding: 0;
   }
-  .container-main {
+  .container-main, #particles-js {
     width: 100%;
   }
 }
 @media only screen and (max-width:500px) {
-  .container-main {
+  .container-main, #particles-js {
     width: 100%;
   }
 }
