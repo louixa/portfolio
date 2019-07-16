@@ -14,16 +14,18 @@ body.fade-out {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 h1 {
+  margin: 0px auto;
+  padding: 15px;
   font-family: 'Montserrat', sans-serif;
   font-size: 36px;
+  letter-spacing: 19px;
 }
 
 h2, h3 {
@@ -72,20 +74,4 @@ a:link, a:active, a:visited {
   height: 100%;
   margin-right: 0;
   margin-left: 0;
-}
-
-
-@media only screen and (max-width:800px) {
-  .container-main, #particles-js {
-    width: 80%;
-    padding: 0;
-  }
-  .container-main, #particles-js {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  .container-main, #particles-js {
-    width: 100%;
-  }
 }

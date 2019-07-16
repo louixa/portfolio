@@ -2,13 +2,6 @@ form {
   padding: 90px;
 }
 
-.index-title h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  word-spacing: 5px;
-  letter-spacing: 2px;
-}
-
 .title-link {
   border-bottom: 2px solid #fff;
 }
@@ -34,26 +27,23 @@ form {
 }
 
 .form-group {
-  font-family: 'Roboto', sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .about-p {
-  padding: 10px;
+  padding: 15px;
   padding-bottom: 50px;
   text-align: left;
 }
 
 button {
-  font-family: 'Roboto', sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 1px;
-
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 /*.about-title {
