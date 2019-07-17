@@ -1,4 +1,50 @@
-<div class="navbar navbar-expand-lg navbar-index d-flex justify-content-center">
+<center>
+<div class="navbar navbar-expand-lg d-flex justify-content-center">
+  <div class="row">
+    <div class="col">
+  <a class="navbar-title" href="/index.html">LOUIXA</a>
+    </div>
+<div class="w-100">
+  <div class="col">
+      <span class='nav-item'><a href="/about.html">ABOUT</a></span>
+      <span class='nav-item'><a href="/projects/index.html">PROJECTS</a></span>
+      <span class='nav-item'>
+          <a onclick="myFunction()" class="photo-dropdwn">PHOTOGRAPHY</a>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/photography/people.html">PEOPLE</a>
+            <a href="/photography/street.html">STREET/URBAN</a>
+            <a href="/photography/landscapes.html">LANDSCAPE</a>
+            <a href="/photography/events.html">EVENTS</a>
+            <a href="/photography/costume.html">COSTUMING</a>
+        </div>
+      </span>
+      <span class='nav-item'><a href="/contact.html">CONTACT</a></span>
+  </div>
+</div>
+</div>
+</div>
+  <script>
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.photo-dropdwn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+
+<!-- <div class="navbar navbar-expand-lg navbar-index d-flex justify-content-center">
   <center>
     <a class="navbar-title" href="/index.html">LOUIXA</a>
       <div class="navbar-menu">
@@ -26,26 +72,6 @@
           </li>
         </ul>
       </div>
-</center>
+  </center>
 </div>
-<script>
-  function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.photo-dropdwn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-
+-->

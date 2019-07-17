@@ -1,5 +1,6 @@
 form {
   padding: 90px;
+  width: 80%;
 }
 
 .title-link {
@@ -14,8 +15,7 @@ form {
 .row-about {
   width: 90%;
   height: 100%;
-  }
-
+}
 
 .about-img {
   padding: 70px;
@@ -23,6 +23,8 @@ form {
 }
 
 .middle-text {
+  justify-content: center;
+  text-align: center;
   padding-top: 40px;
 }
 
@@ -44,7 +46,9 @@ button {
   font-size: 12px;
   word-spacing: 5px;
   letter-spacing: 2px;
+  margin-top: 10px;
 }
+
 
 /*.about-title {
   text-align: center;
