@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
 
 body {
   background-color: #000000;
@@ -6,6 +7,7 @@ body {
   opacity: 1;
   transition: 1s opacity;
   margin: 0;
+  width: 100%;
 }
 
 body.fade-out {
@@ -47,20 +49,13 @@ a:link, a:active, a:visited {
 }
 
 .index-title {
-  text-align: let;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
   margin: 0px auto;
-  padding-bottom: 250px;
-  padding-top: 250px;
-  padding-right: 0;
-  padding-left: 0;
+  padding-bottom: 100px;
+  padding-top: 100px;
   width: 100%;
   height: 100%;
-  top: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-width: 100%;
 }
 
 /*.index-title:hover {
@@ -70,9 +65,9 @@ a:link, a:active, a:visited {
 
 .index-title h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  word-spacing: 5px;
-  letter-spacing: 2px;
+  word-spacing: 6px;
+  font-size: 50px;
+  letter-spacing: 12px;
 }
 
 .title-link {

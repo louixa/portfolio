@@ -18,7 +18,9 @@ form {
 }
 
 .about-img {
-  padding: 70px;
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 20px;
   margin: 0px auto;
 }
 
@@ -37,7 +39,7 @@ form {
 
 .about-p {
   padding: 15px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   text-align: left;
 }
 
