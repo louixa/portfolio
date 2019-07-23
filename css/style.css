@@ -57,12 +57,18 @@ a:link, a:active, a:visited {
 
 .index-title h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 6px;
 }
 
 .title-link {
   border-bottom: 2px solid #fff;
+}
+
+
+@media screen and (max-width: 1920px) and (min-width: 640px)
+.collection-nav-desc-wrapper .collection-desc p {
+    font-size: 6.25vw;
 }
 
 /*.index-title:hover {
