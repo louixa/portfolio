@@ -11,38 +11,37 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" media="screen" href="css/particle.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
 </head>
 <body>
-  <script>document.body.className += ' fade-out';</script>
-  <!-- NAVBAR -->
-  <div data-include="header"></div>
-    <center>
-      <div class="container-main">
-        <!-- PARTICLES.JS CONTAINER -->
-        <div id="particles-js"></div>
-        <!-- TITLE -->
-        <div class="row index-title">
-            <h1>Louisa Wong is a <section style="color: #EDD382;">front-end developer</section> and <section style="color: #8ACB88;">photographer</section> ready to bring ideas to life.</h1>
-        </div>
-      </div>
-    </center>
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script>
-      $(function(){
-        var includes = $('[data-include]');
-        jQuery.each(includes, function(){
-          var file = 'views/' + $(this).data('include') + '.html';
-          $(this).load(file);
-          $('body').removeClass('fade-out');
-        });
+  <!-- BACKGROUND SLIDESHOW CONTAINER -->
+  <ul class="cb-slideshow">
+    <li><span>Image 1</span></li>
+    <li><span>Image 2</span></li>
+    <li><span>Image 3</span></li>
+    <li><span>Image 4</span></li>
+    <li><span>Image 5</span></li>
+    <li><span>Image 6</span></li>
+  </ul>
+  <div class="container-main">
+    <div data-include="header"></div>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(function(){
+      var includes = $('[data-include]');
+      jQuery.each(includes, function(){
+        var file = 'views/' + $(this).data('include') + '.html';
+        $(this).load(file);
+        $('body').removeClass('fade-out');
       });
-    </script>
-    <script src="../particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    });
+  </script>
+  <script>document.body.className += ' fade-out';</script>
+  <script src="js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,1 +1,109 @@
-slideshow.css
+ol,ul {
+  list-style:none;
+}
+
+/*.container{
+  position: relative;
+  text-align: center;
+}*/
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(https://i.imgur.com/GcmFf3W.jpg)
+}
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(https://i.imgur.com/BO8cHBR.jpg);
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(https://i.imgur.com/2C04Lq9.jpg);
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(https://i.imgur.com/sR9M3e1.jpg);
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(https://i.imgur.com/dgFDkoz.jpg);
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(https://i.imgur.com/0IVyoas.jpg);
+    animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(2) div {
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) div {
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) div {
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) div {
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) div {
+    animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+  opacity: 1;
+}
