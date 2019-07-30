@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
   <script>document.body.className += ' fade-out';</script>
@@ -58,20 +59,19 @@
     </center>
 
     <!-- SCRIPTS -->
-  <script src="https://kit.fontawesome.com/e4ec838927.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script>
-    $(function(){
-      var includes = $('[data-include]');
-      jQuery.each(includes, function(){
-        var file = 'views/' + $(this).data('include') + '.html';
-        $(this).load(file);
-        $('body').removeClass('fade-out');
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(function(){
+        var includes = $('[data-include]');
+        jQuery.each(includes, function(){
+          var file = 'views/' + $(this).data('include') + '.html';
+          $(this).load(file);
+          $('body').removeClass('fade-out');
+        });
       });
-    });
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
