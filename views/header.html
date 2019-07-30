@@ -1,14 +1,11 @@
-<center>
-<div class="navbar navbar-expand-lg d-flex justify-content-center">
-  <div class="row">
-    <div class="col">
-  <a class="navbar-title" href="/index.html">LOUIXA</a>
-    </div>
-<div class="w-100">
-  <div class="col">
-      <span class='nav-item'><a href="/about.html">ABOUT</a></span>
-      <span class='nav-item'><a href="/projects/index.html">PROJECTS</a></span>
-      <span class='nav-item'>
+<div class="navbar navbar-expand-lg">
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="overlay-content">
+      <ul>
+        <li class='nav-item'><a href="/about.html">ABOUT</a></li>
+        <li class='nav-item'><a href="/projects/index.html">PROJECTS</a></li>
+        <li class='nav-item'>
           <a onclick="myFunction()" class="photo-dropdwn">PHOTOGRAPHY</a>
           <div id="myDropdown" class="dropdown-content">
             <a href="/photography/people.html">PEOPLE</a>
@@ -16,19 +13,23 @@
             <a href="/photography/travel.html">TRAVEL</a>
             <a href="/photography/events.html">EVENTS</a>
             <a href="/photography/costume.html">COSTUMING</a>
-        </div>
-      </span>
-      <span class='nav-item'><a href="/contact.html">CONTACT</a></span>
+          </div>
+        </li>
+        <li class='nav-item'><a href="/contact.html">CONTACT</a></li>
+      </ul>
+    </div>
   </div>
+  <span style="font-size:36px;cursor:pointer;" onclick="openNav()"><i class="fa fa-times" aria-hidden="true"></i></span>
+  <a class='navbar-title' href="/index.html">LOUIXA</a>
 </div>
-</div>
-</div>
+
+  <!-- SCRIPTS -->
   <script>
     function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
-  // Close the dropdown menu if the user clicks outside of it
+  // CLOSE DROPDOWN
   window.onclick = function(event) {
     if (!event.target.matches('.photo-dropdwn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -42,6 +43,16 @@
     }
   }
   </script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+</script>
 
 
 <!-- <div class="navbar navbar-expand-lg navbar-index d-flex justify-content-center">
