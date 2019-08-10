@@ -20,10 +20,11 @@
 
 .card-trip {
   margin: 0px, auto;
-  padding: 15px;
+  padding: 20px;
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 455px;
 }
 
 .card-trip > img {
@@ -32,21 +33,37 @@
   object-fit: cover;
 }
 
+.card-trip a {
+  color: #000000 !important;
+  text-decoration: none;
+  border-bottom: 3px solid #EDD382;
+}
+
+.card-trip a:hover {
+  color: #000000 !important;
+  text-decoration: none;
+  border-bottom: 3px solid #4F7CAC;
+}
+
 .card-trip-infos {
    text-align: left;
+   padding: 7px;
    color: #000;
+   width: 265px;
 }
 
 .card-trip h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  text-align: left;
 }
 
 .card-trip p {
   font-size: 12px;
   opacity: .7;
   margin: 0;
+  text-align: left;
 }
 
 @media screen and (max-width: 600px) {
