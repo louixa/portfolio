@@ -10,7 +10,7 @@ form {
 
 .about-p {
   padding: 15px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   text-align: left;
   width: 75%;
 }
@@ -78,20 +78,55 @@ textarea {
 .submit-btn {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
+  color: #FFFFFF;
   word-spacing: 5px;
   letter-spacing: 2px;
   margin-top: -4px;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  background: #ECF0F1;
+  background: #000000;
   border-radius: 10px;
-  border: 0;
+  border: 2px solid white;
   cursor: pointer;
-  color: #000000;
   transition: all 700ms ease;
 }
 
 .submit-btn:hover {
   background: #EDD382;
+  border: 2px solid black;
+  color: #000000;
+}
+
+
+.about-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  margin-top: -4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  background: #000000;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 700ms ease;
+}
+
+.about-btn a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.about-btn:hover {
+  background: #EDD382;
+  border: 2px solid black;
+  color: #000000;
+}
+
+.about-button {
+  padding-bottom: 20px;
 }
